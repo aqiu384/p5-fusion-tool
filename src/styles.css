@@ -1,1 +1,131 @@
-/* You can add global styles to this file, and also import other style files */
+/* Demon Compendium */
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+a {
+  color: white;
+}
+
+div.demon-compendium {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+div.center {
+  text-align: center;
+}
+
+/* Tables */
+table {
+  width: 100%;
+}
+
+table.sticky-header {
+  background-color: black;
+}
+
+thead tr, tfoot tr {
+  background-color: crimson;
+  color: black;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #222;
+}
+
+table.sticky-header th.sortable:hover {
+  background-color: orangered;
+}
+
+table.sticky-header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+tfoot.hidden-header {
+  visibility: collapse;
+}
+
+tr.fusion.special {
+  background-color: darkgreen;
+}
+
+tr.fusion.accident, tr.skill.unique {
+  background-color: maroon;
+}
+
+/* Element Icons */
+div.element-icon {
+  height: 30px;
+  line-height: 30px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+div.element-icon.phys { background-image: url('/assets/images/elements/phys.png'); }
+div.element-icon.gun { background-image: url('/assets/images/elements/gun.png'); }
+div.element-icon.fire { background-image: url('/assets/images/elements/fire.png'); }
+div.element-icon.ice { background-image: url('/assets/images/elements/ice.png'); }
+div.element-icon.elec { background-image: url('/assets/images/elements/elec.png'); }
+div.element-icon.wind { background-image: url('/assets/images/elements/wind.png'); }
+div.element-icon.psy { background-image: url('/assets/images/elements/psy.png'); }
+div.element-icon.nuke { background-image: url('/assets/images/elements/nuke.png'); }
+div.element-icon.bless { background-image: url('/assets/images/elements/bless.png'); }
+div.element-icon.curse { background-image: url('/assets/images/elements/curse.png'); }
+div.element-icon.ailment { background-image: url('/assets/images/elements/ailment.png'); }
+div.element-icon.healing { background-image: url('/assets/images/elements/healing.png'); }
+div.element-icon.almighty { background-image: url('/assets/images/elements/almighty.png'); }
+div.element-icon.support { background-image: url('/assets/images/elements/support.png'); }
+div.element-icon.passive { background-image: url('/assets/images/elements/passive.png'); }
+
+/* Resistances */
+td.resists.wk { color: red; }
+td.resists.no { color: transparent; }
+td.resists.rs { color: lightseagreen; }
+td.resists.nu { color: lightgray; }
+td.resists.rp { color: cyan; }
+td.resists.ab { color: lime; }
+
+/* Comma-separated List */
+ul.comma-list {
+  padding: 0;
+  list-style: none;
+}
+
+ul.comma-list li {
+  display: inline;
+}
+
+/* Navbar */
+th.navbar-row {
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav :not(.active) {
+  display: table-cell;
+  background-color: darkred;
+}
+
+nav :not(.active):hover {
+  background-color: crimson;
+}

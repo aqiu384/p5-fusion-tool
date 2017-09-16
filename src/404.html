@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Persona 5 Fusion Tool Redirect</title>
+    <script type="text/javascript">
+      const l = window.location
+      const csrParam = 'csr'
+      const siteRoot = '/p5-fusion-tool'
+      const pathParams = encodeURIComponent(l.pathname.slice(siteRoot.length))
+      const replacePath = (
+        l.protocol + '//' + l.hostname + (l.prot ? ':' + l.port : '') + siteRoot +
+        '?' + (l.search + '&' + csrParam + '=' + pathParams).slice(1) +
+        l.hash
+      )
+      l.replace(replacePath)
+    </script>
+  </head>
+  <body>
+    Please navigate manually to <code>/p5-fusion-tool</code>
+  </body>
+</html>
